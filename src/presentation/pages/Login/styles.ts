@@ -8,30 +8,85 @@ export const Wrapper = styled.div`
   min-height: 100vh;
 
   display: flex;
+`;
+
+export const Ufam = styled.div`
+  width: 80%;
+
+  background-image: url(${BgUfam});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  aside {
+    text-align: center;
+    margin: 20px;
+
+    h1, span  {
+      color: #fff;
+      margin-top: 7px;
+    }
+
+    h1 {
+      font-size: clamp(1em, 1em + 1vw, 1.4em);
+    }
+
+    span {
+      font-size: clamp(.75em, 1em + 1vw, 1em);
+    }
+  } 
+`;
+
+export const FormContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+
+  display: flex;
   flex-direction: column;
 `;
 
-export const Container = styled.div`
+export const Header = styled.div``;
+
+export const FormContent = styled.div`
   flex: 1;
-  display: flex;
 `;
 
 export const Footer = styled.div`
   z-index: 1;
   background: var(--greenDark);
 
-  height: 80px;
-`;
+  height: 60px;
 
-export const Ufam = styled.div`
-  width: 45%;
-  
-  background-image: url(${BgUfam});
-  background-repeat: no-repeat;
-  background-position: center;
-`;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-export const FormContainer = styled.div`
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  ul li {
+    list-style-type: none;
+    margin: 20px;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+
+    &:hover {
+      color: #c7c7c7;
+    }
+  }
 `;
 
 
